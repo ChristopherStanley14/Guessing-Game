@@ -1,0 +1,62 @@
+#heading {
+    height: 80px;
+}
+
+#tile1 {
+    background-color: grey;
+    height: 500px;
+    border-radius: 6px;
+    border: black solid 4px;
+  
+}
+
+#tile2 {
+    background-color: grey;
+    height: 500px;
+    border-radius: 6px;
+    border: black solid 4px;
+   
+    
+}
+
+#tile3 {
+    background-color: grey;
+    height: 500px;
+    border-radius: 6px;
+    border: black solid 4px;
+    
+}
+
+#checkButton {
+    font-size: 20pt;
+    width: 200px;
+}
+
+#startButton {
+    font-size: 20pt;
+    width: 200px;
+}
+
+#num1 {
+    background-color: grey;
+    width: 390px;
+    height: 490px;
+    font-size: 200pt;
+    text-align: center;
+}
+
+#num2 {
+    background-color: grey;
+    width: 390px;
+    height: 490px;
+    font-size: 200pt;
+    text-align: center;
+}
+
+#num3 {
+    background-color: grey;
+    width: 390px;
+    height: 490px;
+    font-size: 200pt;
+    text-align: center;
+}
