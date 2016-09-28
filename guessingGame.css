@@ -1,6 +1,13 @@
-#heading {
+#header {
     height: 80px;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    padding: 19px;
 }
+
+
+
 
 #tile1 {
     background-color: grey;

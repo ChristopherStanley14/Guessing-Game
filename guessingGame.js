@@ -12,11 +12,24 @@ $(function () {
         val3 = Math.floor((Math.random() * 9) + 1);
     };
 
-    // Get Input Numbers
+    var tries = 10;
+
     $("#checkButton").on("click", function () {
         var num1 = $("#num1").val();
         var num2 = $("#num2").val();
         var num3 = $("#num3").val();
+
+    
+
+    $("#checkButton").on("click", function () {
+        tries = tries - 1;
+        $("#header").html("You have " + tries + " more tries.");
+
+        if (tries == 0) {
+            alert("You lose! Correct numbers were: " + val1 + "," + val2 + "," + val3);
+        };
+
+    });
 
 
 
@@ -68,12 +81,19 @@ $(function () {
             $("#num3").css("background-color", "red");
         }
 
-    })
+        if (num1.length > 1) {
+            alert("Please choose a number between 1 and 9");
+        }
+        if (num2.length > 1) {
+            alert("Please choose a number between 1 and 9");
+        }
+        if (num3.length > 1) {
+            alert("Please choose a number between 1 and 9");
+        }
 
+});
 
-
-})
-
+});
 
 
 
