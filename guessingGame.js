@@ -1,5 +1,9 @@
 $(function () {
     // Get Random Numbers
+    $("#header1").show();
+    $("#restartButton").hide();
+    $("#win").hide();
+
     var val1 = Math.floor((Math.random() * 9) + 1);
     var val2 = Math.floor((Math.random() * 9) + 1);
     var val3 = Math.floor((Math.random() * 9) + 1);
@@ -19,18 +23,21 @@ $(function () {
         var num2 = $("#num2").val();
         var num3 = $("#num3").val();
 
-    
+        $("#header1").hide();
 
-    $("#checkButton").on("click", function () {
+
+    
         tries = tries - 1;
         $("#header").html("You have " + tries + " more tries.");
 
         if (tries == 0) {
             alert("You lose! Correct numbers were: " + val1 + "," + val2 + "," + val3);
+            location.reload();
         };
 
-    });
+       
 
+   
 
 
         console.log("random num: " + val1);
@@ -39,6 +46,7 @@ $(function () {
         console.log("input num: " + num1);
         console.log("input num: " + num2);
         console.log("input num: " + num3);
+
 
         if (num1 == val1) {
             $("#tile1").css("background-color", "green");
@@ -72,7 +80,10 @@ $(function () {
             $("#tile3").css("background-color", "green");
             $("#num3").css("background-color", "green");
         }
-        else if (num3 == val1 || num1 == val2) {
+
+        
+
+        else if (num3 == val1 || num3 == val2) {
             $("#tile3").css("background-color", "yellow");
             $("#num3").css("background-color", "yellow");
         }
@@ -81,23 +92,35 @@ $(function () {
             $("#num3").css("background-color", "red");
         }
 
+       
+
         if (num1.length > 1) {
             alert("Please choose a number between 1 and 9");
+            tries = tries + 1;
         }
         if (num2.length > 1) {
             alert("Please choose a number between 1 and 9");
+            tries = tries + 1;
         }
         if (num3.length > 1) {
             alert("Please choose a number between 1 and 9");
+            tries = tries + 1;
         }
 
-});
+         if (num1 == val1 && num2 == val2 && num3 == val3) {
+            $("#checkButton").hide();
+            $("#restartButton").show();
+            $("#win").show();
+            $("#header").hide();
+
+        }
+
 
 });
 
+ 
 
-
-
+});
 
 
 

@@ -1,4 +1,33 @@
+#instructions1 {
+    margin-top: 30px;
+    font-size: 15pt;
+    color: white;
+}
+
+#instructions2 {
+    margin-top: 30px;
+    font-size: 15pt;
+    color: white;
+}
+
+#header1 {
+    height: 80px;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    padding: 19px;
+}
+
 #header {
+    height: 80px;
+    color: white;
+    font-size: 20pt;
+    text-align: center;
+    padding: 19px;
+}
+
+
+#win {
     height: 80px;
     color: white;
     font-size: 20pt;
@@ -39,6 +68,11 @@
     width: 200px;
 }
 
+#restartButton {
+    font-size: 20pt;
+    width: 200px;
+}
+
 
 #num1 {
     background-color: grey;
@@ -46,6 +80,8 @@
     height: 490px;
     font-size: 200pt;
     text-align: center;
+    
+    
 }
 
 #num2 {

@@ -25,35 +25,82 @@
 <body>
 
 
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://christopherstanley14.github.io/">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+
+                <li><a href="https://christopherstanley14.github.io/weatherly/">Weatherly</a></li>
+                <li><a href="https://christopherstanley14.github.io/store-website/">Store Website</a></li>
+                <li><a href="https://christopherstanley14.github.io/Tip-Calculator/">Tip Calculator</a></li>
+                <li><a href="https://christopherstanley14.github.io/Guessing-Game/">Guessing Game</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
 
     <div class="container" style="background-color: black; height: 100%; width: 100%">
         <div class="row">
+            <div class="col-md-4 col-md-push-4" id="header1">
+                <p>You have 10 tries!</p>
+            </div>
+
             <div class="col-md-4 col-md-push-4" id="header">
-              
+
+            </div>
+
+            <div class="col-md-4 col-md-push-4" id="win">
+                <p>You Win!</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4" id="tile1">
-                <span><input id="num1" type="number" name="num1"></span>
-            </div>
+            <center>
+                <div class="col-md-4" id="tile1">
+                    <span><input id="num1" type="number" name="num1"></span>
+                </div>
 
-            <div class="col-md-4" id="tile2">
-                <span><input id="num2" type="number" name="num2"></span>
-            </div>
+                <div class="col-md-4" id="tile2">
+                    <span><input id="num2" type="number" name="num2"></span>
+                </div>
 
-            <div class="col-md-4" id="tile3">
-                <span><input id="num3" type="number" name="num3"></span>
-            </div>
+                <div class="col-md-4" id="tile3">
+                    <span><input id="num3" type="number" name="num3"></span>
+                </div>
         </div>
 
         <div class="row" id="check">
             <div class="col-md-4 col-md-push-5">
                 <button id="checkButton" class="btn btn-primary">Check</button>
             </div>
+
+            <div class="col-md-4 col-md-push-1">
+                <button id="restartButton" class="btn btn-danger" onclick="window.location.reload()">Restart</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="instructions1">
+                <p><strong>Instructions:</strong> A random three numbers sequence will be chose, each between 0 and 9; </p>
+                <p>None of the numbers in the sequence can be the same.</p>
+                <p>Enter one guess per box.</p>
+            </div>
+
+            <div class="col-md-6" id="instructions2">
+                <p>If a number doesn't match any of the numbers in the sequence, the box will turn red.</p>
+                <p>If a number matches that box's number, the box will turn green.</p>
+                <p>If a number doesn't match that box's number, but does match one of the numbers in the sequence, the box will
+                    turn yellow.</p>
+            </div>
         </div>
     </div>
-
+    </center>
 
 </body>
 
